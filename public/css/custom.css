@@ -1,0 +1,158 @@
+:root {
+    --color-blanco: rgba(255, 255, 255, 1);
+    --color-negro: rgba(0, 0, 0, 1);
+    --color-azul-oscuro: rgba(0, 0, 191, 1);
+    --color-azul-claro: rgba(19, 156, 255, 1);
+}
+
+
+
+body {
+    background-color: var(--color-blanco);
+    color: var(--color-negro);
+    font-family: 'Bitter', serif;
+    font-optical-sizing: auto;
+
+}
+
+.navbar {
+    background-color: var(--color-azul-oscuro);
+    padding: 1rem 0;
+}
+
+.navbar-brand, .nav-link {
+    color: var(--color-blanco) !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: var(--color-azul-claro) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-azul-oscuro);
+}
+
+.btn-primary {
+    background-color: var(--color-blanco);
+    border-color: var(--color-azul-oscuro);
+}
+
+.btn-primary:hover {
+    background-color: var(--color-azul-claro);
+    border-color: var(--color-azul-claro);
+}
+
+.btn-secondary {
+    background-color: var(--color-azul-claro);
+    border-color: var(--color-azul-claro);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-azul-oscuro);
+    border-color: var(--color-azul-oscuro);
+}
+
+.card {
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.table {
+    background-color: var(--color-blanco);
+}
+
+.table thead th {
+    background-color: var(--color-azul-oscuro);
+    color: var(--color-blanco);
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(19, 156, 255, 0.1);
+}
+
+.form-control:focus {
+    border-color: var(--color-azul-claro);
+    box-shadow: 0 0 0 0.2rem rgba(19, 156, 255, 0.25);
+}
+
+.alert-success {
+    background-color: rgba(19, 156, 255, 0.2);
+    border-color: var(--color-azul-claro);
+    color: var(--color-azul-oscuro);
+}
+
+.factura-card {
+    background-color: var(--color-blanco);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.factura-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.factura-titulo {
+    color: var(--color-azul-oscuro);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.factura-descripcion {
+    color: var(--color-negro);
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.factura-valor {
+    color: var(--color-azul-claro);
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.watermark {
+    background-image: url('/images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    opacity: 0.1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    pointer-events: none;
+}
+
+.site-footer {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    flex: 1;
+    text-align: left;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+/* Personaliza los estilos según tus preferencias */
+
